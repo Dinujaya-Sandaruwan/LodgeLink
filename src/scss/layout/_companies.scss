@@ -1,0 +1,16 @@
+.c-wrapper {
+  background-color: white;
+
+  .c-container {
+    @extend .paddings;
+    @extend .innerWidth;
+    @extend .flexCenter;
+
+    justify-content: space-around;
+    gap: 1rem;
+
+    img {
+      width: 9rem;
+    }
+  }
+}
