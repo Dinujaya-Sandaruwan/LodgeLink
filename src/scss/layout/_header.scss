@@ -1,0 +1,24 @@
+.h-wrapper {
+  background-color: var(--black);
+  color: white;
+
+  .h-container {
+    @extend .flexCenter;
+    @extend .paddings;
+    @extend .innerWidth;
+
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--scondary);
+
+    .h-menu {
+      @extend .flexCenter;
+      gap: 2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
