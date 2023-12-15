@@ -3,10 +3,13 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-    </>
+    <div className="App">
+      <div>
+        <div className="white-gradient" />
+        <Header />
+        <Hero />
+      </div>
+    </div>
   );
 }
 
