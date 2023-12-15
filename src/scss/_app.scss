@@ -2,8 +2,11 @@
   position: relative;
   overflow-x: clip;
 
-  &:nth-child(1) {
+  & > *:nth-child(1) {
     background-color: var(--black);
+  }
+
+  &:nth-child(1) {
     position: relative;
 
     .white-gradient {

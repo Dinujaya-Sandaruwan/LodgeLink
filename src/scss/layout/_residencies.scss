@@ -1,0 +1,96 @@
+.r-wrapper {
+  .r-container {
+    @extend .paddings;
+    @extend .innerWidth;
+    overflow: hidden;
+    position: relative;
+
+    .r-head {
+      @extend .flexColStart;
+      margin-bottom: 2rem;
+
+      *:nth-child(1) {
+        @extend .orangeText;
+      }
+      *:nth-child(2) {
+        @extend .primaryText;
+      }
+    }
+
+    .r-card {
+      @extend .flexColStart;
+      gap: 0.6rem;
+      padding: 1rem;
+      border-radius: 10px;
+      max-width: max-content;
+      margin: auto;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        scale: 1.025;
+        cursor: pointer;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(136, 160, 255, 0.46) 217.91%
+        );
+        box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+      }
+
+      img {
+        width: 100%;
+        max-width: 15rem;
+      }
+
+      .r-price {
+        @extend .secondaryText;
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        span:nth-child(1) {
+          color: orange;
+        }
+      }
+
+      .r-name {
+        @extend .primaryText;
+        font-size: 1.5rem;
+      }
+
+      .r-detail {
+        @extend .secondaryText;
+        font-size: 0.7rem;
+        width: 15rem;
+      }
+    }
+  }
+}
+
+.swiper-horizontal {
+  overflow: visible !important;
+}
+
+.r-buttons {
+  @extend .flexCenter;
+  position: absolute;
+  gap: 1rem;
+  top: -4rem;
+  right: 0;
+
+  button {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.8rem;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  button:nth-child(1) {
+    background-color: #eeeeff;
+  }
+  button:nth-child(2) {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  }
+}
