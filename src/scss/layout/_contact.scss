@@ -1,0 +1,121 @@
+.c-wrapper {
+  .c-container {
+    @extend .paddings;
+    @extend .innerWidth;
+    @extend .flexCenter;
+
+    justify-content: space-between;
+
+    & > div {
+      flex: 1;
+    }
+
+    .c-left {
+      @extend .flexColStart;
+
+      gap: 0.5rem;
+
+      & > span:nth-child(1) {
+        @extend .orangeText;
+      }
+      & > span:nth-child(2) {
+        @extend .primaryText;
+      }
+      & > span:nth-child(3) {
+        @extend .secondaryText;
+      }
+
+      .contactModes {
+        @extend .flexColStart;
+        margin-top: 2rem;
+        gap: 1rem;
+
+        .row {
+          @extend .flexStart;
+          gap: 1.5rem;
+
+          .mode {
+            @extend .flexColCenter;
+
+            width: 16rem;
+            padding: 1rem;
+            border: 0.8px solid rgba(128, 128, 128, 0.143);
+            border-radius: 5px;
+            gap: 1rem;
+            transition: all 0.3s ease-in;
+
+            &:hover {
+              scale: 1.1;
+              box-shadow: var(--shadow);
+            }
+
+            .mode-content {
+              @extend .flexStart;
+
+              width: 100%;
+              gap: 1.6rem;
+
+              .icon {
+                @extend .flexColCenter;
+                padding: 10px;
+                background-color: #eeeeff;
+                border-radius: 5px;
+                max-width: 50px;
+
+                svg {
+                  fill: var(--blue);
+                }
+              }
+
+              .c-detail {
+                @extend .flexColStart;
+
+                & > span:nth-child(1) {
+                  @extend .primaryText;
+                  font-size: 1.1rem;
+                  font-weight: 600;
+                }
+                & > span:nth-child(2) {
+                  @extend .secondaryText;
+                }
+              }
+            }
+
+            .button {
+              @extend .flexColCenter;
+              width: 100%;
+              background: var(--lightBlue);
+              color: var(--blue);
+              font-size: 0.9rem;
+              font-weight: 600;
+
+              &:hover {
+                background: var(--blue-gradient);
+                color: white;
+                scale: 0.8;
+                transition: all 0.3s ease-in;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .c-right {
+      width: 100%;
+      @extend .flexEnd;
+      .image-container {
+        width: 30rem;
+        height: 35rem;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+        border: 8px solid rgb(232, 232, 232, 93%);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
