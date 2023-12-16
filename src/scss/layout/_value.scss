@@ -1,0 +1,87 @@
+.v-warpper {
+  .v-container {
+    @extend .paddings;
+    @extend .innerWidth;
+    @extend .flexCenter;
+
+    div {
+      flex: 1;
+    }
+
+    .v-left {
+      .image-container {
+        width: 30rem;
+        height: 35rem;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+        border: 8px solid rgb(232, 232, 232, 93%);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .v-right {
+      @extend .flexColStart;
+      gap: 0.5rem;
+
+      span:nth-child(1) {
+        @extend .orangeText;
+      }
+      span:nth-child(2) {
+        @extend .primaryText;
+      }
+      span:nth-child(3) {
+        @extend .secondaryText;
+      }
+
+      .accordian {
+        margin-top: 2rem;
+        border: none;
+        .accordianItem {
+          background-color: white;
+          border: 0.8px solid rgb(128, 128, 128, 0.143);
+          border-radius: 8px;
+          overflow: hidden;
+          margin-bottom: 20px;
+
+          .accordionButton {
+            @extend .flexCenter;
+            justify-content: space-between;
+            background-color: white;
+            padding: 1rem;
+            width: 100%;
+            cursor: pointer;
+
+            div.icon {
+              @extend .flexCenter;
+              padding: 10px;
+              background-color: #eeeeff;
+              border-radius: 5px;
+              max-width: 50px;
+
+              svg {
+                fill: var(--blue);
+              }
+            }
+            span {
+              @extend .primaryText;
+              font-size: 1.1rem;
+            }
+          }
+
+          p {
+            @extend .secondaryText;
+          }
+        }
+
+        .expanded {
+          box-shadow: var(--shadow);
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
