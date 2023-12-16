@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Residencies from "./components/Residencies";
 import Value from "./components/Value";
 import Contact from "./components/Contact";
+import GetSrarted from "./components/GetStarted";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Residencies />
       <Value />
       <Contact />
+      <GetSrarted />
     </div>
   );
 }
