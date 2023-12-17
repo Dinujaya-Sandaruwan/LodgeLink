@@ -4,14 +4,18 @@
     @extend .innerWidth;
     @extend .flexCenter;
 
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     div {
       flex: 1;
     }
 
     .v-left {
       .image-container {
-        width: 30rem;
-        height: 35rem;
+        max-width: 30rem;
+        // height: 35rem;
         overflow: hidden;
         border-radius: 15rem 15rem 0 0;
         border: 8px solid rgb(232, 232, 232, 93%);
@@ -55,6 +59,10 @@
             width: 100%;
             cursor: pointer;
 
+            @media (max-width: 768px) {
+              font-size: 0.8rem;
+            }
+
             div.icon {
               @extend .flexCenter;
               padding: 10px;
@@ -69,6 +77,9 @@
             span {
               @extend .primaryText;
               font-size: 1.1rem;
+              @media (max-width: 768px) {
+                font-size: 0.8rem;
+              }
             }
           }
 
@@ -85,3 +96,6 @@
     }
   }
 }
+
+// @media (max-width: 1024px) {
+// }

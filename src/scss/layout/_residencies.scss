@@ -9,6 +9,10 @@
       @extend .flexColStart;
       margin-bottom: 2rem;
 
+      @media (max-width: 640px) {
+        align-items: center;
+      }
+
       *:nth-child(1) {
         @extend .orangeText;
       }
@@ -77,6 +81,10 @@
   top: -4rem;
   right: 0;
 
+  @media (max-width: 640px) {
+    position: initial;
+  }
+
   button {
     font-size: 1.2rem;
     padding: 0.2rem 0.8rem;
@@ -94,3 +102,6 @@
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
   }
 }
+
+// @media (max-width: 640px) {
+// }

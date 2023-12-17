@@ -14,8 +14,33 @@
     .h-menu {
       @extend .flexCenter;
       gap: 2rem;
+      z-index: 99;
 
       &:hover {
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        color: var(--black);
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        background-color: white;
+        flex-direction: column;
+        font-weight: 500;
+        gap: 2rem;
+        padding: 3rem;
+        border-radius: 10px;
+        align-items: flex-start;
+        box-shadow: rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease-in;
+      }
+    }
+    .menu-icon {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
         cursor: pointer;
       }
     }

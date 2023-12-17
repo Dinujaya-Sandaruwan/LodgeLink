@@ -6,6 +6,14 @@
 
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+      justify-content: center;
+
+      div {
+        align-items: center !important;
+      }
+    }
+
     .f-left {
       @extend .flexColStart;
       gap: 1rem;

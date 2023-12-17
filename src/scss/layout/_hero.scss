@@ -2,14 +2,19 @@
   color: white;
   position: relative;
   padding-bottom: 2rem;
+  z-index: 1;
 
   .hero-container {
     @extend .paddings;
     @extend .innerWidth;
     @extend .flexCenter;
 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
+
+    @media (max-width: 640px) {
+      margin-top: 2rem;
+    }
 
     .hero-left {
       @extend .flexColStart;
@@ -34,6 +39,11 @@
           font-weight: 600;
           font-size: 3.8rem;
           line-height: 4rem;
+
+          @media (max-width: 640px) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+          }
         }
       }
       .hero-des {
@@ -69,11 +79,20 @@
         width: 100%;
         justify-content: space-between;
 
+        @media (max-width: 640px) {
+          justify-content: center;
+          gap: 1.5rem;
+        }
+
         .stat {
           @extend .flexColCenter;
 
           & > :nth-child(1) {
             font-size: 2rem;
+
+            @media (max-width: 640px) {
+              font-size: 1.5rem;
+            }
 
             & > :last-child {
               color: orange;
@@ -81,6 +100,9 @@
           }
           & > :nth-child(2) {
             @extend .secondaryText;
+            @media (max-width: 640px) {
+              font-size: 0.8rem;
+            }
           }
         }
       }
@@ -89,12 +111,21 @@
     .hero-right {
       @extend .flexCenter;
 
+      @media (max-width: 640px) {
+        width: 100%;
+      }
+
       .image-container {
         width: 30rem;
         height: 35rem;
         overflow: hidden;
         border-radius: 15rem 15rem 0 0;
         border: 8px solid rgb(255, 255, 255, 0.12);
+
+        @media (max-width: 640px) {
+          width: 95%;
+          height: 25rem;
+        }
 
         img {
           width: 100%;
@@ -104,3 +135,6 @@
     }
   }
 }
+
+// @media (max-width: 640px) {
+// }
