@@ -1,0 +1,36 @@
+{
+  "name": "lodge-link",
+  "version": "1.0.0",
+  "description": "LodgeLink: Connects travelers with cozy stays and empowers hosts to share spaces. Whether you seek comfort or welcome guests, LodgeLink is your link to hassle-free accommodations. Join our community for a journey where hospitality knows no bounds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dinujaya-Sandaruwan/LodgeLink.git"
+  },
+  "keywords": [
+    "lodging",
+    "travel"
+  ],
+  "author": "Dinujaya sandaruwan",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Dinujaya-Sandaruwan/LodgeLink/issues"
+  },
+  "homepage": "https://github.com/Dinujaya-Sandaruwan/LodgeLink#readme",
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-oauth2-jwt-bearer": "^1.6.0",
+    "nodemon": "^3.0.2",
+    "prisma": "^5.7.1"
+  }
+}
