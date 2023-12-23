@@ -1,0 +1,46 @@
+.r-card {
+  @extend .flexColStart;
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: auto;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(136, 160, 255, 0.46) 217.91%
+    );
+    box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+  }
+
+  img {
+    width: 100%;
+    max-width: 15rem;
+  }
+
+  .r-price {
+    @extend .secondaryText;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    span:nth-child(1) {
+      color: orange;
+    }
+  }
+
+  .r-name {
+    @extend .primaryText;
+    font-size: 1.5rem;
+  }
+
+  .r-detail {
+    @extend .secondaryText;
+    font-size: 0.7rem;
+    width: 15rem;
+  }
+}
