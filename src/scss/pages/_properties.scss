@@ -1,0 +1,24 @@
+.properties-container {
+  @extend .flexColCenter;
+  @extend .innerWidth;
+  @extend .paddings;
+
+  gap: 2rem;
+
+  .search-bar {
+    width: clamp(12rem, 100%, 28rem);
+    border-radius: 30px;
+    border: 1px solid rbga(120, 120, 120, 0.374);
+
+    .button {
+      border-radius: 30px;
+      font-size: 10px;
+      padding: 10px 15px;
+      font-size: 12px;
+    }
+
+    input {
+      width: 70%;
+    }
+  }
+}
