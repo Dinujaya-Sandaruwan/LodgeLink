@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import { getAllProperties } from "../utils/api";
 
 const useProperties = () => {
-  const { data, isError, isloding, refetch } = useQuery({
+  const { data, isError, isLoading, refetch } = useQuery({
     queryKey: "allProperties",
     queryFn: getAllProperties,
     refetchOnWindowFocus: false,
@@ -11,7 +11,7 @@ const useProperties = () => {
   return {
     data,
     isError,
-    isloding,
+    isLoading,
     refetch,
   };
 };
