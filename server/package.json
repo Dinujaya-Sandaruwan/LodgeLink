@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Dinujaya-Sandaruwan/LodgeLink#readme",
   "dependencies": {
+    "@mantine/styles": "^6.0.21",
     "@prisma/client": "^5.7.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
